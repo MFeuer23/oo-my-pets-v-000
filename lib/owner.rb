@@ -74,7 +74,9 @@ class Owner
       fish.mood= "nervous"
     end
     @pets[:fishes].clear
-
   end
 
+  def list_pets
+    return "I have #{@pets[:fishes].size} fish, #{} dog(s), and #{} cat(s)."
+  end
 end
