@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :pets, :name
+  attr_accessor :pets, :name, :mood
   attr_reader :species
   @@all = []
 
@@ -39,6 +39,12 @@ class Owner
   def buy_dog(name)
     new_dog = Dog.new(name)
     @pets[:dogs] << new_dog
+  end
+
+  def walk_dogs
+    @pets[:dogs].each do |dog|
+      dog.mood= "happy"
+    end
   end
 
 end
