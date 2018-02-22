@@ -74,7 +74,7 @@ class Owner
       fish.mood= "nervous"
     end
     @pets[:fishes].clear
-    
+
   end
 
 end
